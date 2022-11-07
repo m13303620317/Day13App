@@ -1,0 +1,21 @@
+﻿<Page
+    x:Class="Day12App.Picture"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Day12App"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <ListView Loaded="ListView_Loaded">
+            <Image x:Name="ImageA" Source="LockScreenLogo.scale-200.png" Width="80" Height="60" />
+            <Image Source="ms-appx:/Images/b.jpg" Width="80" Height="60" />
+            <Image Source="ms-appx:/Images/c.jpg" Width="80" Height="60" />
+        </ListView>
+        
+        <Button Content="Click to go to MainPage"
+                Click="Button_Click" Margin="702,631,0,0" VerticalAlignment="Top" />
+    </Grid>
+</Page>
